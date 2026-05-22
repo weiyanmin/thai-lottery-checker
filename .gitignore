@@ -1,19 +1,9 @@
-# Python
-__pycache__/
-*.py[cod]
-*.egg-info/
-dist/
-build/
-*.egg
-
 # Environment
 .env
 .env.*
 !.env.example
-venv/
-.venv/
 
-# Database
+# Database (local SQLite — no longer used)
 *.db
 *.db-wal
 *.db-shm
@@ -26,10 +16,6 @@ Thumbs.db
 .vscode/
 .idea/
 *.swp
-*.swo
 
-# Vercel
-.vercel/
-
-# Node
-node_modules/
+# Supabase local
+supabase/.temp/
