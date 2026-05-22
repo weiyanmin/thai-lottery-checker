@@ -15,8 +15,8 @@ A Telegram Mini App for checking Thai Government Lottery numbers in bulk. Featur
 
 ```
 webapp/          → Frontend (HTML/CSS/JS) — deployed to Vercel
-api/             → REST API (FastAPI) — deployed to Railway
-bot/             → Telegram Bot (notifications only) — deployed to Railway
+api/             → REST API (FastAPI) — deployed to Render
+bot/             → Telegram Bot (notifications only) — deployed to Render
 ```
 
 ## Setup
@@ -29,7 +29,7 @@ bot/             → Telegram Bot (notifications only) — deployed to Railway
 ## Deploy
 
 - **Frontend** → Push `webapp/` to Vercel
-- **Backend** → Push to Railway (auto-detects `railway.json`)
+- **Backend** → Push to Render (auto-detects `render.yaml`)
 - **Bot** → Configure via BotFather: `/mybots` → Configure Mini App
 
 ## License
