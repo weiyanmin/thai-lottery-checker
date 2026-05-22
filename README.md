@@ -14,7 +14,7 @@ A Telegram Mini App for checking Thai Government Lottery numbers in bulk. Featur
 ## Architecture
 
 ```
-webapp/          → Frontend (HTML/CSS/JS) — deployed to Vercel
+webapp/          → Frontend (HTML/CSS/JS) — served by FastAPI
 api/             → REST API (FastAPI) — deployed to Render
 bot/             → Telegram Bot (notifications only) — deployed to Render
 ```
@@ -26,10 +26,7 @@ bot/             → Telegram Bot (notifications only) — deployed to Render
 3. Install dependencies: `pip install -r requirements.txt`
 4. Run locally: `DEV_MODE=1 uvicorn api.server:app --port 8080`
 
-## Deploy
-
-- **Frontend** → Push `webapp/` to Vercel
-- **Backend** → Push to Render (auto-detects `render.yaml`)
+- **Web & Backend** → Push to Render (auto-detects `render.yaml`)
 - **Bot** → Configure via BotFather: `/mybots` → Configure Mini App
 
 ## License
